@@ -1,0 +1,13 @@
+{
+	"type": "origins:target_action_on_hit",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "execute as @s at @s run function star:summon_star"
+	},
+	"cooldown": 600,
+	"hud_render": {
+	  "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+	  "bar_index": 17
+	},
+	"hidden": true
+}

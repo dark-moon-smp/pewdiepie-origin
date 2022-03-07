@@ -1,0 +1,21 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"hidden": true,
+	"condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:dimension",
+				"dimension": "minecraft:the_nether"
+			},
+			{
+				"type": "origins:dimension",
+				"dimension": "minecraft:the_end"
+			}
+		]
+	},
+	"modifier": {
+		"name": "less",
+		"operation": "addition",
+		"value": -0.50
+	}
+}

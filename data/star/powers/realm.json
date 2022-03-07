@@ -1,0 +1,23 @@
+{
+	"type": "origins:conditioned_attribute",
+	"hidden": true,
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"operation": "addition",
+		"value": -0.05,
+		"name": "run"
+	},
+	"tick_rate": 5,
+	"condition": {
+		"type": "origins:or",
+		"conditions": [{
+				"type": "origins:dimension",
+				"dimension": "minecraft:the_nether"
+			},
+			{
+				"type": "origins:dimension",
+				"dimension": "minecraft:the_end"
+			}
+		]
+	}
+}

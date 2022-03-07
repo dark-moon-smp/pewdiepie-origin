@@ -1,0 +1,23 @@
+{
+	"type": "origins:action_on_callback",
+	"hidden": true,
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "team add star"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join star @s",
+				"permission_level": 4
+			}
+		]
+	},
+	"entity_action_removed": {
+		"type": "origins:execute_command",
+		"permission_level": 4,
+		"command": "team leave @s"
+	}
+}
